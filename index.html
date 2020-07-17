@@ -58,25 +58,29 @@
             'Open_front_unrounded_vowel.mp3'
         ];
 
-        sounds = [];
-        buttons = [];
 
         for (const filename of files) {
             var a = document.createElement('audio');
             a.id = filename;
             a.src = filename;
-            sounds.push(a);
             document.body.appendChild(a);
 
             b = document.createElement('button');
             b.innerHTML = 'ʊ̈';
-            b.onclick = () => { document.getElementById(filename).play() };
-            buttons.push(b);
+            b.onclick = () => {
+                a = document.createElement('audio');
+                a.src = filename;
+                a.play();
+                a.remove();
+            };
             document.body.appendChild(b);
         }
 
         function makeasound(e) {
-            sounds[e.keyCode % sounds.length].play();
+            a = document.createElement('audio');
+            a.src = files[e.keyCode % files.length];
+            a.play();
+            a.remove();
         }
 
         window.addEventListener('keydown', makeasound, false);

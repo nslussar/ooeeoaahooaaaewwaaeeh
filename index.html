@@ -1,187 +1,87 @@
 <html>
-<body>
 <style>
-body {
-    background: linear-gradient(to bottom, rgba(243,226,199,1) 0%,rgba(193,158,103,1) 50%,rgba(182,141,76,1) 51%,rgba(233,212,179,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-button { 
-    height: 150px;
-    width: 150px;
-    background: linear-gradient(135deg, rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%); 
-    margin: 5px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 48px;
-}
-button:active { 
-    background: red;
-}
+    body {
+        background: linear-gradient(to bottom, rgba(243, 226, 199, 1) 0%, rgba(193, 158, 103, 1) 50%, rgba(182, 141, 76, 1) 51%, rgba(233, 212, 179, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+
+    button {
+        height: 100px;
+        width: 100px;
+        background: linear-gradient(135deg, rgba(243, 197, 189, 1) 0%, rgba(232, 108, 87, 1) 50%, rgba(234, 40, 3, 1) 51%, rgba(255, 102, 0, 1) 75%, rgba(199, 34, 0, 1) 100%);
+        margin: 5px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 48px;
+    }
+
+    button:active {
+        background: red;
+    }
 </style>
-<h1>use A-Z 1-5 kbd shortcuts</h1>
-<h1>mash the keys!</h1>
-<audio id='Close-mid_back_rounded_vowel.mp3' src='Close-mid_back_rounded_vowel.mp3'></audio>
-<audio id='Close-mid_back_unrounded_vowel.mp3' src='Close-mid_back_unrounded_vowel.mp3'></audio>
-<audio id='Close-mid_central_rounded_vowel.mp3' src='Close-mid_central_rounded_vowel.mp3'></audio>
-<audio id='Close-mid_central_unrounded_vowel.mp3' src='Close-mid_central_unrounded_vowel.mp3'></audio>
-<audio id='Close-mid_front_rounded_vowel.mp3' src='Close-mid_front_rounded_vowel.mp3'></audio>
-<audio id='Close-mid_front_unrounded_vowel.mp3' src='Close-mid_front_unrounded_vowel.mp3'></audio>
-<audio id='Close_back_rounded_vowel.mp3' src='Close_back_rounded_vowel.mp3'></audio>
-<audio id='Close_back_unrounded_vowel.mp3' src='Close_back_unrounded_vowel.mp3'></audio>
-<audio id='Close_central_rounded_vowel.mp3' src='Close_central_rounded_vowel.mp3'></audio>
-<audio id='Close_central_unrounded_vowel.mp3' src='Close_central_unrounded_vowel.mp3'></audio>
-<audio id='Close_front_rounded_vowel.mp3' src='Close_front_rounded_vowel.mp3'></audio>
-<audio id='Close_front_unrounded_vowel.mp3' src='Close_front_unrounded_vowel.mp3'></audio>
-<audio id='Mid_back_rounded_vowel.mp3' src='Mid_back_rounded_vowel.mp3'></audio>
-<audio id='Mid_front_unrounded_vowel.mp3' src='Mid_front_unrounded_vowel.mp3'></audio>
-<audio id='Near-close_central_unrounded_vowel.mp3' src='Near-close_central_unrounded_vowel.mp3'></audio>
-<audio id='Near-close_near-back_rounded_vowel.mp3' src='Near-close_near-back_rounded_vowel.mp3'></audio>
-<audio id='Near-close_near-front_rounded_vowel.mp3' src='Near-close_near-front_rounded_vowel.mp3'></audio>
-<audio id='Near-close_near-front_unrounded_vowel.mp3' src='Near-close_near-front_unrounded_vowel.mp3'></audio>
-<audio id='Near-open_central_unrounded_vowel.mp3' src='Near-open_central_unrounded_vowel.mp3'></audio>
-<audio id='Near-open_front_unrounded_vowel.mp3' src='Near-open_front_unrounded_vowel.mp3'></audio>
-<audio id='Open-mid_back_rounded_vowel.mp3' src='Open-mid_back_rounded_vowel.mp3'></audio>
-<audio id='Open-mid_back_unrounded_vowel.mp3' src='Open-mid_back_unrounded_vowel.mp3'></audio>
-<audio id='Open-mid_central_rounded_vowel.mp3' src='Open-mid_central_rounded_vowel.mp3'></audio>
-<audio id='Open-mid_central_unrounded_vowel.mp3' src='Open-mid_central_unrounded_vowel.mp3'></audio>
-<audio id='Open-mid_front_rounded_vowel.mp3' src='Open-mid_front_rounded_vowel.mp3'></audio>
-<audio id='Open-mid_front_unrounded_vowel.mp3' src='Open-mid_front_unrounded_vowel.mp3'></audio>
-<audio id='Open_back_rounded_vowel.mp3' src='Open_back_rounded_vowel.mp3'></audio>
-<audio id='Open_back_unrounded_vowel.mp3' src='Open_back_unrounded_vowel.mp3'></audio>
-<audio id='Open_central_unrounded_vowel.mp3' src='Open_central_unrounded_vowel.mp3'></audio>
-<audio id='Open_front_rounded_vowel.mp3' src='Open_front_rounded_vowel.mp3'></audio>
-<audio id='Open_front_unrounded_vowel.mp3' src='Open_front_unrounded_vowel.mp3'></audio>
-<button onclick="document.getElementById('Close-mid_back_rounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Close-mid_back_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Close-mid_central_rounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Close-mid_central_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Close-mid_front_rounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Close-mid_front_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Close_back_rounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Close_back_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Close_central_rounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Close_central_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Close_front_rounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Close_front_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Mid_back_rounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Mid_front_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Near-close_central_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Near-close_near-back_rounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Near-close_near-front_rounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Near-close_near-front_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Near-open_central_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Near-open_front_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Open-mid_back_rounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Open-mid_back_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Open-mid_central_rounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Open-mid_central_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Open-mid_front_rounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Open-mid_front_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Open_back_rounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Open_back_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Open_central_unrounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Open_front_rounded_vowel.mp3').play();">ʊ̈</button>
-<button onclick="document.getElementById('Open_front_unrounded_vowel.mp3').play();">ʊ̈</button>
 
-<script type="text/javascript">
+<body>
+    <h1>Click the buttons or better mash all the keyboard keys!</h1>
 
-window.addEventListener('keydown', this.check, false);
+    <script type="text/javascript">
+        files = [
+            'Close-mid_back_rounded_vowel.mp3',
+            'Close-mid_back_unrounded_vowel.mp3',
+            'Close-mid_central_rounded_vowel.mp3',
+            'Close-mid_central_unrounded_vowel.mp3',
+            'Close-mid_front_rounded_vowel.mp3',
+            'Close-mid_front_unrounded_vowel.mp3',
+            'Close_back_rounded_vowel.mp3',
+            'Close_back_unrounded_vowel.mp3',
+            'Close_central_rounded_vowel.mp3',
+            'Close_central_unrounded_vowel.mp3',
+            'Close_front_rounded_vowel.mp3',
+            'Close_front_unrounded_vowel.mp3',
+            'Mid_back_rounded_vowel.mp3',
+            'Mid_front_unrounded_vowel.mp3',
+            'Near-close_central_unrounded_vowel.mp3',
+            'Near-close_near-back_rounded_vowel.mp3',
+            'Near-close_near-front_rounded_vowel.mp3',
+            'Near-close_near-front_unrounded_vowel.mp3',
+            'Near-open_central_unrounded_vowel.mp3',
+            'Near-open_front_unrounded_vowel.mp3',
+            'Open-mid_back_rounded_vowel.mp3',
+            'Open-mid_back_unrounded_vowel.mp3',
+            'Open-mid_central_rounded_vowel.mp3',
+            'Open-mid_central_unrounded_vowel.mp3',
+            'Open-mid_front_rounded_vowel.mp3',
+            'Open-mid_front_unrounded_vowel.mp3',
+            'Open_back_rounded_vowel.mp3',
+            'Open_back_unrounded_vowel.mp3',
+            'Open_central_unrounded_vowel.mp3',
+            'Open_front_rounded_vowel.mp3',
+            'Open_front_unrounded_vowel.mp3'
+        ];
 
-function check(e) {
-    if (String.fromCharCode(e.keyCode) == 'Q') {
-        document.getElementById('Close-mid_back_rounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'W') {
-        document.getElementById('Close-mid_back_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'E') {
-        document.getElementById('Close-mid_central_rounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'R') {
-        document.getElementById('Close-mid_central_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'T') {
-        document.getElementById('Close-mid_front_rounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'Y') {
-        document.getElementById('Close-mid_front_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'U') {
-        document.getElementById('Close_back_rounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'I') {
-        document.getElementById('Close_back_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'ʊ̈') {
-        document.getElementById('Close_central_rounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'P') {
-        document.getElementById('Close_central_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == '1') {
-        document.getElementById('Close_front_rounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == '2') {
-        document.getElementById('Close_front_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'A') {
-        document.getElementById('Mid_back_rounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'S') {
-        document.getElementById('Mid_front_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'D') {
-        document.getElementById('Near-close_central_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'F') {
-        document.getElementById('Near-close_near-back_rounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'G') {
-        document.getElementById('Near-close_near-front_rounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'H') {
-        document.getElementById('Near-close_near-front_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'J') {
-        document.getElementById('Near-open_central_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'K') {
-        document.getElementById('Near-open_front_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'L') {
-        document.getElementById('Open-mid_back_rounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == '3') {
-        document.getElementById('Open-mid_back_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == '4') {
-        document.getElementById('Open-mid_central_rounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'Z') {
-        document.getElementById('Open-mid_central_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'X') {
-        document.getElementById('Open-mid_front_rounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'C') {
-        document.getElementById('Open-mid_front_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'V') {
-        document.getElementById('Open_back_rounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'B') {
-        document.getElementById('Open_back_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'N') {
-        document.getElementById('Open_central_unrounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == 'M') {
-        document.getElementById('Open_front_rounded_vowel.mp3').play();
-    }
-    else if (String.fromCharCode(e.keyCode) == '5') {
-        document.getElementById('Open_front_unrounded_vowel.mp3').play();
-    }
-}
-</script>
+        sounds = [];
+        buttons = [];
+
+        for (const filename of files) {
+            var a = document.createElement('audio');
+            a.id = filename;
+            a.src = filename;
+            sounds.push(a);
+            document.body.appendChild(a);
+
+            b = document.createElement('button');
+            b.innerHTML = 'ʊ̈';
+            b.onclick = () => { document.getElementById(filename).play() };
+            buttons.push(b);
+            document.body.appendChild(b);
+        }
+
+        function makeasound(e) {
+            sounds[e.keyCode % sounds.length].play();
+        }
+
+        window.addEventListener('keydown', makeasound, false);
+    </script>
 
 </body>
+
 </html>
